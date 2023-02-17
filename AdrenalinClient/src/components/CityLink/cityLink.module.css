@@ -1,0 +1,14 @@
+.cityLinkWrapper {
+  width: 90%;
+  color: white;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.cityLinkWrapper hr {
+  width: 90%;
+  height: 0.16rem;
+  background-color: white;
+  margin-bottom: 0.3rem;
+  outline: none;
+}

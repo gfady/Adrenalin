@@ -1,0 +1,110 @@
+.headerWrapper {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+    url('../../assets/img/imageHeader.png');
+  background-origin: border-box;
+  width: 100%;
+  background-repeat: no-repeat;
+  height: fit-content;
+  padding: 1% 0 9% 0;
+  background-position: center;
+  background-size: cover;
+}
+
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 2rem 10% 0 10%;
+  margin-bottom: 10rem;
+}
+
+.headerTop img {
+  width: 15rem;
+}
+
+.sheduleBtn {
+  background: rgb(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.45em;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 0.2rem 4rem 0.2rem 4rem;
+}
+
+.sheduleBtn:hover {
+  transform: scale(102%);
+}
+
+.headerMain {
+  padding-left: 10%;
+  padding-bottom: 10%;
+}
+
+.headerMain h1 {
+  font-size: 3em;
+  color: white;
+  padding-bottom: 1.5rem;
+}
+
+.headerMain button {
+  font-size: 1.4em;
+  color: white;
+  background: var(--color-red);
+  padding: 1.1rem 5rem 1.1rem 5rem;
+  border-radius: 26px;
+  text-transform: uppercase;
+}
+
+.headerMain button > a {
+  color: white;
+}
+
+.headerMain button:hover {
+  transform: scale(104%);
+}
+
+.cityLinks {
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+}
+
+.cityLinks > *:hover {
+  cursor: pointer;
+  transform: translateY(-7px);
+  transition: transform 0.3s ease-in;
+}
+
+.headerMain button {
+  -webkit-animation: shadow-drop-center 3s steps(2, start) infinite;
+  animation: shadow-drop-center 3s steps(2, start) infinite;
+}
+
+@media screen and (max-width: 1050px) {
+  .headerWrapper {
+    height: 37rem;
+  }
+}
+
+@-webkit-keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.7);
+  }
+}
+@keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.7);
+  }
+}

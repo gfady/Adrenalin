@@ -1,0 +1,12 @@
+.nothingWrapper {
+  margin-top: 12vh;
+  margin-left: 8%;
+}
+
+.nothingWrapper > img {
+  width: 30%;
+}
+
+.nothingWrapper > h2 {
+  font-size: 1.6em;
+}

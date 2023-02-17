@@ -1,0 +1,80 @@
+.rulesWrapper {
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4% 0 2% 0;
+}
+
+.ruleWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.ruleWrapper:hover {
+  transform: scale(101%);
+}
+
+.ruleWrapper > img {
+  width: 25%;
+}
+
+.ruleWrapper a:visited {
+  color: black;
+}
+
+.ruleWrapper > h2 {
+  color: var(--color-red);
+  font-size: 1.6em;
+}
+
+.ruleWrapper > button {
+  background: transparent;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  border: var(--color-red) 4px solid;
+  border-radius: 20px;
+  padding: 4% 6%;
+}
+
+.ruleWrapper > button:hover {
+  background: var(--color-red);
+  transition: all 0.4s ease-out;
+}
+.ruleWrapper a:hover {
+  color: white;
+  transition: all 0.3s linear;
+}
+
+.ruleWrapper > * {
+  margin: 2rem 0 3rem 0;
+}
+
+@media screen and (max-width: 1050px) {
+  .ruleWrapper > h2,
+  .ruleWrapper > button {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .rulesWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ruleWrapper {
+    width: 60%;
+    margin: 1.5rem 0;
+  }
+  .ruleWrapper > img {
+    width: 30%;
+  }
+  .ruleWrapper > * {
+    margin: 1.5rem;
+  }
+}

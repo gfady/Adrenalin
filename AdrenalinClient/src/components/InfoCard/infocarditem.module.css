@@ -1,0 +1,42 @@
+.cardsWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4rem 0;
+}
+
+.cardItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 8px 9px 21px #999;
+  padding: 0.5rem 1.5rem 3.5rem 1.9rem;
+}
+
+.cardItem:hover {
+  transform: scale(100.7%);
+}
+
+.cardItem > img {
+  width: 36%;
+}
+
+.cardItem > h3 {
+  color: #b60000;
+}
+
+.cardItem > * {
+  margin-top: 1rem;
+  font-size: 1.2em;
+}
+
+@media (max-width: 1300px) {
+  .cardsWrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2.5rem;
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
